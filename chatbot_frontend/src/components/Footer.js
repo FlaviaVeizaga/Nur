@@ -34,32 +34,34 @@ export default class Footer extends Component {
             <div>
                 <Row style={{ marginLeft: '0px', marginTop: '2px', marginRight: '1px' }}>
 
-                    <Col style={{ backgroundColor: '#007bff', marginLeft: '5px', marginTop: '2px', paddingBottom: '5px', borderRadius:'10px' }} sm={12}>
-                        <Badge style={{color:'white'}}>
-                        Campus Universitario: Av. Cristo Redentor 100 |
+                    <div style={{ justifyContent: 'center', width: '100%', paddingTop: '10px', paddingBottom: '10px' }}  >
+                        <a href='https://www.facebook.com/UniversidadNURoficial' target="_blank" rel="noreferrer" variant='none' style={{ padding: '6px 12px' }}>
+                            <img width="25" height="25" style={{ marginLeft: '5px', borderRadius: '50%' }} src={fab} alt='facebook' />
+                        </a>
+
+                        <a href='https://www.instagram.com/universidadnur/' target="_blank" rel="noreferrer" variant='none' style={{ padding: '6px 12px' }}>
+                            <img width="25" height="25" style={{ marginLeft: '5px', borderRadius: '25%' }} src={inst} alt='instagram' />
+                        </a>
+
+                        <a href='https://twitter.com/universidadnur' target="_blank" rel="noreferrer" variant='none' style={{ padding: '6px 12px' }}>
+                            <img width="25" height="25" style={{ marginLeft: '5px', borderRadius: '100%' }} src={tw} alt='twitter' />
+                        </a>
+
+                        <a href='https://www.youtube.com/channel/UCg7_S3COOpvKoMxnf7qKmBw' target="_blank" rel="noreferrer" variant='none' style={{ padding: '6px 12px' }}>
+                            <img width="25" height="25" style={{ marginLeft: '5px', borderRadius: '100%' }} src={yt} alt='youtube' />
+                        </a>
+                        <a href='https://api.whatsapp.com/send?phone=59162094586&text=Deseo%20Informaci%C3%B3n%20de...' target="_blank" rel="noreferrer" variant='none' style={{ padding: '6px 12px' }}>
+                            <img width="25" height="25" style={{ marginLeft: '5px', borderRadius: '100%' }} src={wa} alt='whatsapp' />
+                        </a>
+                    </div>
+                    <Col style={{ backgroundColor: '#007bff', marginLeft: '5px', marginTop: '2px', paddingBottom: '5px', borderRadius: '10px' }} sm={12}>
+
+                        <Badge style={{ color: 'white' }}>
+                            Campus Universitario: Av. Cristo Redentor 100 |
                         Tel.: +591 (3) 3363939 | soporte_tecnico@nur.edu  <br></br>
                         Santa Cruz de la Sierra - Bolivia Copyright © Nur 2020 Todos los derechos reservados.
                         </Badge>
-                        <Row style={{ justifyContent: 'center' }}>
-                            <a href='https://www.facebook.com/UniversidadNURoficial' variant='none' style={{ padding: '6px 12px' }}>
-                                <img width="30" height="30" style={{ marginLeft: '5px', backgroundColor: '#edededf7', borderRadius: '100%' }} src={fab} alt='facebook' />
-                            </a>
 
-                            <a href='https://www.instagram.com/universidadnur/' variant='none' style={{ padding: '6px 12px' }}>
-                                <img width="30" height="30" style={{ marginLeft: '5px',borderRadius: '25%' }} src={inst} alt='instagram' />
-                            </a>
-
-                            <a href='https://twitter.com/universidadnur' variant='none' style={{ padding: '6px 12px' }}>
-                                <img width="30" height="30" style={{ marginLeft: '5px', backgroundColor: '#edededf7', borderRadius: '100%' }} src={tw} alt='twitter' />
-                            </a>
-
-                            <a href='https://www.youtube.com/channel/UCg7_S3COOpvKoMxnf7qKmBw' variant='none' style={{ padding: '6px 12px' }}>
-                                <img width="30" height="30" style={{ marginLeft: '5px',  borderRadius: '100%' }} src={yt} alt='youtube' />
-                            </a>
-                            <a href='https://api.whatsapp.com/send?phone=59162094586&text=Deseo%20Informaci%C3%B3n%20de...' variant='none' style={{ padding: '6px 12px' }}>
-                                <img width="30" height="30" style={{ marginLeft: '5px', borderRadius: '100%' }} src={wa} alt='whatsapp' />
-                            </a>
-                        </Row>
                     </Col>
                 </Row>
 

@@ -9,12 +9,12 @@ export default class MenuBar extends Component {
                 marginLeft: 'auto', marginRight: 'auto', textAlign: 'left', color: '#FFFFFF', marginBottom: '2px'
             }}>
                 <Navbar.Brand style={{ color: 'white', marginRight: '30px' }} href="/" >Soporte Técnico NUR</Navbar.Brand>
-                <Nav.Link style={{ color: 'white' }} href="http://nzf.dgg.mybluehost.me/reglamentos/1reglamentoestudiantilpregrado/mobile/#p=84">
+                <Nav.Link style={{ color: 'white' }} href="#">
                     Guia de Uso</Nav.Link>
                 <Dropdown>
                     <Dropdown.Toggle style={{ color: 'white' }} id="dropdown-basic">  Tipo Soporte  </Dropdown.Toggle>
                     <Dropdown.Menu style={{ backgroundColor: '#007bffa8' }}>
-                        <Dropdown.Item href="https://www.nur.edu/" >Estudiantil</Dropdown.Item>
+                        <Dropdown.Item href="/Soporte/Estudiantil" >Estudiantil</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
                         <Dropdown.Item href="http://cvsc.nur.edu/">Docente</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
@@ -59,11 +59,19 @@ export default class MenuBar extends Component {
                 <Dropdown className='mr-auto'>
                     <Dropdown.Toggle style={{ color: 'white' }} id="dropdown-basic"> Paginas Principales </Dropdown.Toggle>
                     <Dropdown.Menu style={{ backgroundColor: '#007bffa8' }}>
-                        <Dropdown.Item href="https://www.nur.edu/" >Universidad NUR</Dropdown.Item>
+                        <Dropdown.Item href="https://www.nur.edu/" target="_blank" rel="noreferrer">Universidad NUR</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
-                        <Dropdown.Item href="http://cvsc.nur.edu/">Plataforma Estudiantil</Dropdown.Item>
+                        <Dropdown.Item href="http://cvsc.nur.edu/" target="_blank" rel="noreferrer">Plataforma Estudiantil</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
-                        <Dropdown.Item href="http://notas2.nur.edu/">Consulta de Notas</Dropdown.Item>
+                        <Dropdown.Item href="http://notas2.nur.edu/" target="_blank" rel="noreferrer">Consulta de Notas</Dropdown.Item>
+                        <NavDropdown.Divider></NavDropdown.Divider>
+                        <Dropdown.Item href="http://unirse.nur.edu/" target="_blank" rel="noreferrer">Unirse</Dropdown.Item>
+                        <NavDropdown.Divider></NavDropdown.Divider>
+                        <Dropdown.Item href="http://biblio.nur.edu/" target="_blank" rel="noreferrer">Biblioteca Nur</Dropdown.Item>
+                        <NavDropdown.Divider></NavDropdown.Divider>
+                        <Dropdown.Item href="http://phpnur.nur.edu:8099/webcredenciales/" target="_blank" rel="noreferrer">Credenciales NUR</Dropdown.Item>
+                        <NavDropdown.Divider></NavDropdown.Divider>
+                        <Dropdown.Item href="http://nzf.dgg.mybluehost.me/calendario/maquetacion.php" target="_blank" rel="noreferrer">Calendario</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
 

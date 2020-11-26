@@ -8,7 +8,7 @@ import FourthImage from '../img/equipo.jpg'
 export default class Body extends Component {
     render() {
         return (
-            <div style={{ height: '495px', backgroundColor: 'none', border: "solid", borderColor: '#08A5DF', borderRadius: '10px' }}>
+            <div >
                 <Row>
                     <Col sm={2} style={{border:'none', backgroundColor:'none'}}>
                         <Card style={{ margin: '10px', width: '100%', background: '#08A5DF', borderRadius: '100%', borderColor:'none'}}>
@@ -38,11 +38,11 @@ export default class Body extends Component {
                                     alt="First slide"
                                 />
                                 <Carousel.Caption >
-                                    <Button style={{ marginLeft: '25px', marginBottom: '11px', padding: '1px 5px' }}>aquí</Button>
+                                    <a className ='btn btn-info' target="_blank" rel="noreferrer" href ='https://drive.google.com/file/d/1Vmo-3ZGKGbPnxFnZg1dxhPaoCHsBQ_nE/view' 
+                                    style={{ marginLeft: '25px', marginBottom: '11px', padding: '1px 5px' }}>aquí</a>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item interval={4500}>
-                                <a href='cvsc.nur.edu'>
 
                                     <img onClick={() => { this.setState({ activa: true }) }} style={{ height: '490px', width: '800', background: '#373940' }}
                                         className="d-block w-100"
@@ -51,10 +51,8 @@ export default class Body extends Component {
                                     />
                                     <Carousel.Caption>
                                     </Carousel.Caption>
-                                </a>
                             </Carousel.Item>
                             <Carousel.Item interval={4500}>
-                                <a href='cvsc.nur.edu'>
 
                                     <img onClick={() => { this.setState({ activa: true }) }} style={{ height: '490px', width: '800', background: '#373940' }}
                                         className="d-block w-100"
@@ -63,7 +61,6 @@ export default class Body extends Component {
                                     />
                                     <Carousel.Caption>
                                     </Carousel.Caption>
-                                </a>
                             </Carousel.Item>
                         </Carousel>
                     </Col>
