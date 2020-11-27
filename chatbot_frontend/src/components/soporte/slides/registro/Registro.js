@@ -1,52 +1,98 @@
 import React, { Component } from 'react'
-import { Badge, Card, Carousel, Col, Row } from 'react-bootstrap'
-import down from '../flechas/down.svg'
+import { Card, Col, ListGroup, Row, Tab } from 'react-bootstrap'
 import todo from './todo.jpg'
 import ventanilla from './ventanilla.jpg'
+import pensum from './pensum.jpg'
 
 export default class Registro extends Component {
     render() {
         return (
-            <Row  style={{ margin:'0px', paddingTop:'15px'}}>
-                
-                <Col  >
-                    <Carousel style={{ width: '650px'}}>
-                        <Carousel.Item interval={8000}>
-                            <img
-                                className="d-block w-100"
-                                src={todo}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
+            <div style={{ paddingTop: '15px', paddingLeft: '15px' }}>
 
-                                <a className='btn' target="_blank" 
-                                rel="noreferrer" style={{ color: 'white', backgroundColor: '#007bff' }}
-                                    href='http://notas2.nur.edu/' >comenzar</a>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item interval={8000}>
-                            <img
-                                className="d-block w-100"
-                                src={ventanilla}
-                                alt="Third slide"
-                            />
-                            <Carousel.Caption>
-                                <p style ={{color:'#007bff'}}className ='btn'></p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={todo}
-                                alt="Third slide"
-                            />
-                            <Carousel.Caption>
-                                
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
-                </Col>
-            </Row>
+                <Tab.Container id="list-group-tabs-example" defaultActiveKey='#oferta'>
+
+                    <Row>
+
+                        <Col sm={3} style={{ textAlign: 'left' }}>
+                            <Card style={{ borderRadius: '3%', borderColor: '#08a5df', borderWidth: '2px', marginBottom: '5px' }}>
+                                <Card.Header style={{ backgroundColor: 'white' }}>
+                                    <h4 style={{ textAlign: 'center' }}>Preguntas Frecuentes sobre Registro de Materias</h4>
+                                </Card.Header>
+                            </Card>
+                            <ListGroup>
+                                <ListGroup.Item action href="#oferta">
+                                    ¿Cómo ver mi oferta de Materias?
+                                    </ListGroup.Item>
+                                <ListGroup.Item action href="#oferta2">
+                                    ¿Con quién puedo comunicarme para ver mi oferta de materias?
+                                </ListGroup.Item>
+                                <ListGroup.Item action href="#pensum">
+                                    ¿Dónde puedo solicitar el pensum de mi carrera?
+                                </ListGroup.Item>
+                                <ListGroup.Item>
+                                    <a href='/Soporte/Estudiantil'>{'<<< '}Volver</a>
+                                </ListGroup.Item>
+                            </ListGroup>
+                        </Col>
+                        <Col sm={9}  >
+                            <Row style={{ paddingRight: '15px' }}>
+                                <Col sm={12} >
+                                    <Card style={{ background: 'none', border: 'none' }}>
+                                        <Tab.Content  >
+                                            <Tab.Pane eventKey="#oferta">
+                                                <Row>
+                                                    <Col sm={8}>
+                                                        <img style={{ height: '100%' }}
+                                                            className="d-block w-100"
+                                                            src={todo}
+                                                            alt="First slide"
+                                                        />
+                                                    </Col>
+                                                    <Col sm={4}>
+
+                                                        <a className='btn' target="_blank"
+                                                            rel="noreferrer" style={{ color: 'white', backgroundColor: '#007bff', marginTop: '35%' }}
+                                                            href='http://notas2.nur.edu/' >Haz click aqui</a>
+                                                        <p> para ver tus ofertas</p>
+                                                    </Col>
+                                                </Row>
+                                            </Tab.Pane>
+                                            <Tab.Pane eventKey="#oferta2">
+                                                <Row>
+                                                    <Col sm={8}>
+                                                        <img
+                                                            className="d-block w-100"
+                                                            src={ventanilla}
+                                                            alt="Third slide" />
+                                                    </Col>
+                                                    <Col sm={4}>
+
+                                                        <a className='btn' style={{ color: 'white', backgroundColor: '#007bff', marginTop: '35%' }}
+                                                            href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro' >ir al menu</a>
+                                                    </Col>
+                                                </Row>
+                                            </Tab.Pane>
+
+                                            <Tab.Pane eventKey="#pensum">
+                                                <Row>
+                                                    <Col sm={8}>
+                                                        <img
+                                                            className="d-block w-100"
+                                                            src={pensum}
+                                                            alt="Third slide"
+                                                        />
+                                                    </Col>
+                                                </Row>
+                                            </Tab.Pane>
+                                        </Tab.Content>
+                                    </Card>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+
+                </Tab.Container>
+            </div>
         )
     }
 }
