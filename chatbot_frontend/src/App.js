@@ -10,6 +10,7 @@ import Switch from 'react-bootstrap/esm/Switch';
 import ReglamentoEstudiantil from './views/ReglamentoEstudiantil';
 import SoporteEstudiantil from './components/soporte/SoporteEstudiantil';
 import Registro from './components/soporte/slides/registro/Registro';
+import Plataforma from './components/soporte/slides/plataforma/Plataforma';
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
               <Route exact path='/' component={Body} />
               <Route path='/Reglamento/Estudiantil' component={ReglamentoEstudiantil} />
               <Route exact path='/Soporte/Estudiantil' component={SoporteEstudiantil} />
-              <Route path='/Soporte/Estudiantil/Registro' component={Registro} />
+              <Route path='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/' component={Registro} />
+              <Route path='/Soporte/Estudiantil/Preguntas_Frecuentes/Plataforma/' component={Plataforma} />
             </Router>
           </div>
 
