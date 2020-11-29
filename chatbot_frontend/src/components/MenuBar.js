@@ -16,9 +16,9 @@ export default class MenuBar extends Component {
                     <Dropdown.Menu style={{ backgroundColor: '#007bffa8' }}>
                         <Dropdown.Item href="/Soporte/Estudiantil" >Estudiantil</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
-                        <Dropdown.Item href="http://cvsc.nur.edu/">Docente</Dropdown.Item>
+                        <Dropdown.Item href="/Soporte/Docentes">Docente</Dropdown.Item>
                         <NavDropdown.Divider></NavDropdown.Divider>
-                        <Dropdown.Item href="http://notas2.nur.edu/">Administrativo</Dropdown.Item>
+                        <Dropdown.Item href="/Soporte/Administrativo">Administrativo</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown>

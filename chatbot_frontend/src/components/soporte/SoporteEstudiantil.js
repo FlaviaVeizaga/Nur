@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Card, Col, ListGroup, Nav, Row, Tab, Table } from 'react-bootstrap'
 import link from './img/link.svg'
-import Registro from './slides/registro/Registro'
 
 export default class SoporteEstudiantil extends Component {
 
@@ -69,17 +68,13 @@ export default class SoporteEstudiantil extends Component {
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="#Preguntas%Frecuentes">
                                     <Card style={{ textAlign: 'left', borderRadius: '2%' }}>
-                                        <Tab.Container id="left-tabs-example" defaultActiveKey="Registro">
+                                        <Tab.Container id="left-tabs-example" defaultActiveKey="Clases_Virtuales">
                                             <Row>
                                                 <Col sm={3} style={{ paddingLeft: '25px' }}>
                                                     <Nav variant="pills" className="flex-column">
-                                                        <Nav.Item >
-                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px', textDecoration: 'none' }}
-                                                                eventKey="Registro">Registro de Materias</Nav.Link>
-                                                        </Nav.Item>
                                                         <Nav.Item>
                                                             <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
-                                                                eventKey="Pagos">Pagos</Nav.Link>
+                                                                eventKey="Clases_Virtuales">Clases Virturales</Nav.Link>
                                                         </Nav.Item>
                                                         <Nav.Item>
                                                             <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
@@ -87,25 +82,51 @@ export default class SoporteEstudiantil extends Component {
                                                         </Nav.Item>
                                                         <Nav.Item>
                                                             <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
+                                                                eventKey="Materias">Materias</Nav.Link>
+                                                        </Nav.Item>
+                                                        <Nav.Item>
+                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
                                                                 eventKey="Notas">Notas</Nav.Link>
+                                                        </Nav.Item>
+                                                        <Nav.Item>
+                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
+                                                                eventKey="Pagos">Pagos o Deudas pendientes</Nav.Link>
                                                         </Nav.Item>
                                                         <Nav.Item>
                                                             <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
                                                                 eventKey="Plataforma%virtual">Plataforma Virtual</Nav.Link>
                                                         </Nav.Item>
-                                                        <Nav.Item>
-                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
-                                                                eventKey="Clases%virtuales">Clases Virturales</Nav.Link>
-                                                        </Nav.Item>
-                                                        <Nav.Item>
-                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px' }}
-                                                                eventKey="Materias">Materias</Nav.Link>
+                                                        <Nav.Item >
+                                                            <Nav.Link style={{ paddingTop: '15px', paddingBottom: '15px', textDecoration: 'none' }}
+                                                                eventKey="Registro">Registro de Materias</Nav.Link>
                                                         </Nav.Item>
 
                                                     </Nav>
                                                 </Col>
                                                 <Col sm={9}>
                                                     <Tab.Content>
+                                                        <Tab.Pane eventKey="Clases_Virtuales">
+                                                            <Table>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Clases Virtuales/'>
+                                                                                Tengo problemas con mi cuenta de office ¿Con quién me contacto?
+                                                                                </a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Clases Virtuales/'>
+                                                                                No puedo acceder a mis clases virtuales¿Qué hago?
+                                                                                </a>
+                                                                        </td>
+                                                                    </tr>
+
+                                                                </tbody>
+
+                                                            </Table>
+                                                        </Tab.Pane>
                                                         <Tab.Pane eventKey="Registro">
                                                             <Table>
                                                                 <tbody>
@@ -140,7 +161,7 @@ export default class SoporteEstudiantil extends Component {
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/'>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Pagos/'>
                                                                                 ¿Cuál es el número de la persona encargada de los pagos?
                                                                                 </a>
                                                                         </td>
@@ -162,7 +183,7 @@ export default class SoporteEstudiantil extends Component {
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/'>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Faltas/'>
                                                                                 ¿Cuántas faltas puedo tener en todo el semestre?
                                                                                 </a>
                                                                         </td>
@@ -184,7 +205,7 @@ export default class SoporteEstudiantil extends Component {
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/'>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Notas/'>
                                                                                 ¿Con quién me comunico si no tengo problemas para acceder a mis notas?
                                                                                 </a>
                                                                         </td>
@@ -222,34 +243,12 @@ export default class SoporteEstudiantil extends Component {
 
                                                             </Table>
                                                         </Tab.Pane>
-                                                        <Tab.Pane eventKey="Clases%virtuales">
-                                                            <Table>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/'>
-                                                                                Tengo problemas con mi cuenta de office ¿Con quién me contacto??
-                                                                                </a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/#oferta2'>
-                                                                                No puedo acceder a mis clases virtuales¿Qué hago?
-                                                                                </a>
-                                                                        </td>
-                                                                    </tr>
-
-                                                                </tbody>
-
-                                                            </Table>
-                                                        </Tab.Pane>
                                                         <Tab.Pane eventKey="Materias">
                                                             <Table>
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
-                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Registro/'>
+                                                                            <a href='/Soporte/Estudiantil/Preguntas_Frecuentes/Materias/'>
                                                                                 ¿Cómo puedo conseguir el número de mi docente?
                                                                                 </a>
                                                                         </td>
